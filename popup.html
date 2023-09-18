@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        margin: 0;
+        padding: 10px;
+        min-width: 200px;
+    }
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    input[type="text"] {
+        width: calc(100% - 80px);
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="display: flex; align-items: center;">
+      <label for="speed">Speed: </label>
+      <input type="text" id="speed" name="speed" value="1" style="margin-right: 10px;">
+      <button id="setSpeedBtn">OK</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
